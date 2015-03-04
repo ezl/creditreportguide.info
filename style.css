@@ -25,3 +25,16 @@ section#annotations > div {
     line-height: 80px;
     vertical-align: bottom;
 }
+
+.navbar-inverse {
+    background-color: #1d80fe;
+    border-color: #084898;
+}
+.navbar-inverse .navbar-brand {
+    color: #084898;
+}
+.navbar-header a.navbar-brand {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
