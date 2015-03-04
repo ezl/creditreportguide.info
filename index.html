@@ -288,7 +288,7 @@
                     <td>Open Date</td>
                     <td>Date Rep.</td>
                     <td>Current Status</td>
-                    <td>MOP</td>
+                    <td data-content="mop">MOP</td>
                     <td colspan="3" style="text-align:center;">Credit History</td>
                     <td colspan="3" style="text-align:center;">Sources</td>
                   </tr>
@@ -339,10 +339,10 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="2">DIGITALFCU</td>
+                    <td colspan="2" data-content="credit-guarantor">DIGITALFCU</td>
                     <td>11/01/2004</td>
                     <td>10/01/2011</td>
-                    <td>Curr Acct</td>
+                    <td data-content="current-status">Curr Acct</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -1277,6 +1277,21 @@
               <div data-annotation="tradelines">
                   <h3>Trade Lines</h3>
                   <p>Notes about tradelines!</p>
+              </div>
+              <div data-annotation="credit-guarantor">
+                  <h3>Credit Guarantor</h3>
+                  <p>The credit guarantor is the actual creditor for a given account.  This is a person, company, or organization where the applicant has a debt or an open account.</p>
+                  <p>It could be a credit card company, bank, mortgage, etc.</p>
+              </div>
+              <div data-annotation="current-status">
+                  <h3>Current Status</h3>
+                  <p>This is the status of the account, i.e. whether it's in good standing and current on all payments, behind on payments, has been written off, etc.</p>
+                  <p>If you see "Current", that's good. If you see "Chargeoff", that's bad.</p>
+              </div>
+              <div data-annotation="mop">
+                  <h3>MOP</h3>
+                  <p>Easter Egg!</p>
+                  <p>I think I'm supposed to remove this!</p>
               </div>
             </section>
           </div>
