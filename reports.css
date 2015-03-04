@@ -1,0 +1,178 @@
+.quiet { font-size: .85em; color: #888; }
+#sources > span { padding-right: 8px; }
+
+#credit_report {
+    padding-top: 15px;
+}
+#credit_report th.title {
+    text-align: center;
+    border-bottom: solid #000 1px;
+    /* background-color: #EEE;
+    */
+}
+
+#credit_report th {
+    padding: 4px;
+}
+
+
+
+#credit_report td pre {
+    border: 0px;
+    padding: 0px;
+    padding-top: 2px;
+    margin: 0px;
+}
+
+#credit_report table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#credit_report th, #credit_report td {
+    border: solid #000 1px;
+}
+
+#credit_history th, #credit_history td {
+    text-align: center;
+}
+
+#intro_table {
+    float: left;
+}
+
+#intro_table th {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#report_source_box {
+    width: 100%;
+    border: 0px;
+}
+
+#report_source_box td {
+    border: 0px;
+    width: 50%;
+}
+
+#report_source_box td.first_col {
+	    width: 46px;
+    border: 0px;
+}
+
+#report_source_box td.first_col img {
+    margin: 0px;
+}
+
+#intro_table {
+}
+
+#intro_table, #intro_table td {
+    border: solid #000 1px;
+}
+
+body.popup table {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#credit_report th {
+    padding: 2px;
+}
+
+body.popup table td {
+    padding-left: 5px;
+}
+
+th.title {
+  background-color: #333367;
+  border: 1px solid #333356;
+  background-color: #2B2D30;
+  border: 1px solid #2B2D30;
+  color: white;
+}
+table.table.table-bordered {
+  margin-bottom: 20px;
+}
+
+#credit_history {
+    border: solid black 1px;
+}
+
+#credit_history td {
+    border: 0px;
+    text-align: left;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+
+
+.report-section {
+  border-bottom: 1px solid lightgrey;
+  padding:15px;
+}
+.report-field {
+  word-wrap: break-word;
+  padding-bottom:10px;
+}
+
+.report-field label {
+  font-weight: bold;
+  width:       100%;
+  text-align:  right;
+}
+
+@media screen and (max-width: 767px) {
+  .report-field label {
+    text-align:  left;
+  }
+}
+
+.report-section .field-value {
+  white-space: pre-line;
+}
+
+.report .table-title {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#app-tabs-content {
+  height: Calc(100vh - 180px);
+}
+#app-tabs-content .tab-pane {
+  height: 100%;
+  overflow-y:auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+
+div.report.credit .credit-history td {
+  border-bottom: 1px solid #ddd;
+}
+
+div.report table>thead>tr>th,
+div.report table>thead>tr>td {
+  border-bottom-width: 1px;
+}
+
+div.report.credit .credit-history tr.last-row:not(:last-child) td,
+div.report.credit .credit-history thead>tr.last-row>th {
+  border-bottom: 1px solid #555;
+}
+
+.share-experian-report-btn {
+  margin-bottom: 15px;
+}
+
+.content-full {
+    /* Flatty pushes the content right to
+       account for the width of the menu sidebar
+       We don't want this for unauthenticated users,
+       so remove it.
+    */
+    margin-left: 0px !important;
+}
