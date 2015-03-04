@@ -5,6 +5,6 @@ $(document).ready(function () {
       target.show();
   });
   $('[data-content]').mouseleave(function () {
-      $('[data-annotation]').hide();
+      $('[data-annotation]').fadeOut();
   });
 });
