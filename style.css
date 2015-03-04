@@ -1,0 +1,11 @@
+section#annotations > div {
+    display: none; 
+}
+.quiet { font-size: .85em; color: #888; }
+
+
+*[data-content] {
+    background-color: antiquewhite;
+    cursor: help;
+}
+
