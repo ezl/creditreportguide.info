@@ -46,19 +46,18 @@
     </nav><!-- /.navbar -->
 
     <div class="container">
-      <div class="row hidden-lg" id="full-width-browser-please">
-        <div class="col-xs-12 bg-danger">
-          <h2 class="text-danger"><i class="glyphicon glyphicon-exclamation-sign"></i> We Recommend Using A Larger Display To View This Guide</h2>
-          <p class="text-danger">
-            This guide is optimized for full screen browsing on a wider browser.  Because the credit report content
-            contains a lot of information, it's difficult to make it all fit nicely on a smaller viewport like a mobile phone
-            or a tablet.
-          </p>
-          <p class="text-danger">
-            If you're already viewing this from a laptop or desktop computer, we recommend widening the browser size to the full
-            screen width.
-          </p>
-        </div>
+      <div class="alert alert-dismissable alert-danger" id="full-width-browser-please">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2><i class="glyphicon glyphicon-exclamation-sign"></i> We Recommend Using A Larger Display To View This Guide</h2>
+        <p>
+          This guide is optimized for full screen browsing on a wider browser.  Because the credit report content
+          contains a lot of information, it's difficult to make it all fit nicely on a smaller viewport like a mobile phone
+          or a tablet.
+        </p>
+        <p>
+          If you're already viewing this from a laptop or desktop computer, we recommend widening the browser size to the full
+          screen width.
+        </p>
       </div><!-- row#full-width-browser-please -->
 
       <div class="row row-offcanvas row-offcanvas-right">
@@ -1265,6 +1264,7 @@
                   <p>Easter Egg!</p>
                   <p>I think I'm supposed to remove this!</p>
               </div>
+              <button class="btn btn-primary btn-sm hidden-lg hide-offcanvas">OK</button>
             </section>
           </div>
         </div><!--/.sidebar-offcanvas-->
