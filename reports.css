@@ -1,3 +1,6 @@
+#content {
+    background-color: white;
+}
 .quiet { font-size: .85em; color: #888; }
 #sources > span { padding-right: 8px; }
 
