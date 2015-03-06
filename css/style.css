@@ -10,10 +10,17 @@ section#annotations > div {
     display: none; 
 }
 
+.monospace {
+    font-family: monospace;
+}
 
 .quiet {
     font-size: .85em;
     color: #888;
+}
+
+.reddish {
+    color: #c7254e;
 }
 
 *[data-content] {
