@@ -119,7 +119,7 @@ table.table.table-bordered {
 #credit_history tr td:first-child {
     padding-left: 8px;
 }
-#credit_history tbody tr:nth-child(6n),
+#credit_history tbody tr:nth-child(4n),
 #credit_history thead tr:last-child {
     border-bottom: 1px solid #323A45;
 }
