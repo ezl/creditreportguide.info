@@ -10,6 +10,7 @@ section#annotations > div {
     display: none; 
 }
 
+
 .quiet {
     font-size: .85em;
     color: #888;
@@ -65,7 +66,6 @@ section#annotations > div {
     -webkit-border-radius: 4px 4px 0px 0px;
       -moz-border-radius: 4px 4px 0px 0px;
            border-radius: 4px 4px 0px 0px;
-
 }
 .byline a {
     color: white;
