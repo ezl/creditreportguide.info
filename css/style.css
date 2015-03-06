@@ -1,7 +1,9 @@
+#sidebar h3 {
+    margin-top: 0;
+}
+
 font-options {
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Julius Sans One', sans-serif;
-    font-family: 'Allura', cursive;
     font-family: 'Cedarville Cursive', cursive;
 
 }
@@ -34,6 +36,9 @@ section#annotations > div {
     padding: 5px 10px;
     font-weight: bold;
     border: 1px solid antiquewhite;
+    -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+           border-radius: 4px;
 }
 
 #fico {
@@ -73,11 +78,11 @@ section#annotations > div {
     -webkit-border-radius: 4px 4px 0px 0px;
       -moz-border-radius: 4px 4px 0px 0px;
            border-radius: 4px 4px 0px 0px;
+    margin-right: 20px;
 }
 .byline a {
-    color: white;
-    font-family: 'Allura', cursive;
-    font-family: 'Cedarville Cursive', cursive;
+    color: #eef;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 100;
 }
