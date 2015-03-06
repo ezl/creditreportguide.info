@@ -82,7 +82,7 @@
                       <table id="intro_table" class="table table-bordered">
                         <tbody>
                           <tr class="code">
-                            <td style="width: 33%;">
+                            <td style="width: 33%;" data-content="file_number">
                               <strong>File Number</strong><br>
                               <span class="monospace">OWA-494609</span>
                             </td>
@@ -96,7 +96,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2"><strong>Sources</strong>
+                            <td colspan="2" data-content="sources"><strong>Sources</strong>
                               <div id="sources" class="monospace">
                                 <span>[ <span class="reddish">X</span> ] TransUnion</span>
                                 <br>
@@ -144,8 +144,8 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td data-content="name">GEORGE E. JETSON</td>
+                  <tr data-content="applicant_information">
+                    <td>GEORGE E. JETSON</td>
                     <td>458-96-8376</td>
                     <td>42</td>
                     <td>1968-7-11</td>
@@ -165,7 +165,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td colspan="2" class="well" data-content="fico">
+                        <td colspan="2" class="well" data-content="credit_score">
                           <div class="text-center">
                             <h1 id="fico">780</h1>
                             <p class="quiet">(Source: TransUnion Empirica)
@@ -174,7 +174,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td data-content="top_scoring_criteria">
                           <strong>Top Scoring Criteria:</strong>
                           <ul>
                             <li>Too many inquiries last 12 months</li>
@@ -206,11 +206,11 @@
                         <td>Mortgage</td>
                         <td>1</td>
                       </tr>
-                      <tr>
+                      <tr data-content="negative_tradelines">
                         <td>Negative/Derogatory</td>
                         <td>0</td>
                       </tr>
-                      <tr>
+                      <tr data-content="collection_tradelines">
                         <td>Collection</td>
                         <td>0</td>
                       </tr>
@@ -218,7 +218,7 @@
                         <td>Open</td>
                         <td>3</td>
                       </tr>
-                      <tr>
+                      <tr data-content="delinquent_tradelines">
                         <td>Delinquent</td>
                         <td>0</td>
                       </tr>
@@ -226,7 +226,7 @@
                         <td>Late</td>
                         <td>0</td>
                       </tr>
-                      <tr>
+                      <tr data-content="public_record_tradelines">
                         <td>Public Record</td>
                         <td>0</td>
                       </tr>
@@ -246,15 +246,15 @@
                 <tbody>
                   <tr>
                     <td class="title"></td>
-                    <td class="title">HIGH CREDIT</td>
-                    <td class="title">OPEN AMOUNT</td>
-                    <td class="title">CREDIT LIMIT</td>
-                    <td class="title">BALANCE</td>
+                    <td data-content="financial_summary_high_credit" class="title">HIGH CREDIT</td>
+                    <td data-content="financial_summary_open_amount" class="title">OPEN AMOUNT</td>
+                    <td data-content="financial_summary_credit_limit" class="title">CREDIT LIMIT</td>
+                    <td data-content="financial_summary_balance" class="title">BALANCE</td>
                     <td class="title">PAST DUE</td>
                     <td class="title">MONTHLY PAY</td>
                   </tr>
                   <tr>
-                    <td>Revolving</td>
+                    <td data-content="financial_summary_revolving">Revolving</td>
                     <td>$350</td>
                     <td>$350</td>
                     <td>$350</td>
@@ -263,7 +263,7 @@
                     <td>$0</td>
                   </tr>
                   <tr>
-                    <td>Installment</td>
+                    <td data-content="financial_summary_installment">Installment</td>
                     <td>$0</td>
                     <td>$0</td>
                     <td>$0</td>
@@ -272,7 +272,7 @@
                     <td>$0</td>
                   </tr>
                   <tr>
-                    <td>Mortgage</td>
+                    <td data-content="financial_summary_mortgage">Mortgage</td>
                     <td>$0</td>
                     <td>$0</td>
                     <td>$0</td>
@@ -299,15 +299,15 @@
               <table id="credit_history" class="table table-bordered">
                 <thead>
                   <tr>
-                    <th class="title" colspan="9">Non-Derogatory Credit</th>
+                    <th class="title" colspan="9">Credit Accounts</th>
                   </tr>
                   <tr>
-                    <td colspan="2">Credit Grantor</td>
-                    <td>Open Date</td>
-                    <td>Date Rep.</td>
-                    <td>Current Status</td>
-                    <td data-content="mop">MOP</td>
-                    <td colspan="3" style="text-align:center;">Credit History</td>
+                    <td colspan="2" data-content="account_credit_grantor">Credit Grantor</td>
+                    <td data-content="account_open_date">Open Date</td>
+                    <td data-content="account_date_rep">Date Rep.</td>
+                    <td data-content="account_current_status">Current Status</td>
+                    <td data-content="account_months_rev">Months Rev</td>
+                    <td colspan="3" data-content="account_credit_history" style="text-align:center;">Credit History</td>
                   </tr>
                   <tr>
                     <td colspan="2">Account Number</td>
@@ -320,7 +320,7 @@
                     <td>90</td>
                   </tr>
                   <tr>
-                    <td>Type</td>
+                    <td data-content="account_type">Type</td>
                     <td></td>
                     <td>Terms</td>
                     <td>Payment</td>
@@ -331,16 +331,17 @@
                     <td colspan="9">Comment</td>
                   </tr>
                   <tr>
-                    <td colspan="9">Credit Grantor Address</td>
+                    <td colspan="5">Credit Grantor Address</td>
+                    <td colspan="4" data-content="account_payment_pattern">Payment Pattern</td>
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
-                    <td colspan="2" data-content="credit-grantor">DIGITALFCU</td>
+                    <td colspan="2">DIGITALFCU</td>
                     <td>11/01/2004</td>
                     <td>10/01/2011</td>
-                    <td data-content="current-status">Curr Acct</td>
+                    <td>Curr Acct</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -1161,39 +1162,168 @@
                   <p>This is an <strong>interactive guide</strong> to help you understand how to effectively read credit reports.</p>
                   <p>If you hover your mouse over any content that is highlighted in <span class="sample-highlight">beige</span> on the sample credit report to your left, you'll see an explanation of what that data means right here.</p><br>
               </div>
-              <div data-annotation="name">
-                  <h3>Name</h3>
-                  <p>This is the applicant's name. It's usually a bunch of letters and spaces.</p>
+              <div data-annotation="file_number">
+                  <h3>File Number</h3>
+                  <p>The file number is the number used by our data processor to identify the report (for use mainly by Rent Application staff).</p>
               </div>
-              <div data-annotation="date-issued">
-                  <h3>Date Issued</h3>
-                  <p>The date the credit report was ordered.</p>
+              <div data-annotation="sources">
+                  <h3>Sources</h3>
+                  <p>Type of report and which credit database is being used.</p>
+                  <p>Here we are examining a TransUnion credit report. Each of the three major credit reporting agencies (TransUnion, Experian and Equifax) maintain their own databases of credit information as well as calculate their scores using separate criteria and algorithms.</p>
+                  <p>For this reason, a person’s TransUnion score may not match an Experian score.</p>
               </div>
-              <div data-annotation="fico">
+              <div data-annotation="applicant_information">
+                  <h3>Applicant Information</h3>
+                  <p>Identifying information about the applicant – name, SSN, Age, DOB.</p>
+                  <p>All of these should match the information provided in the application.  If any of them do not match, please let Rent Application staff know and we will investigate for you.</p>
+              </div>
+              <div data-annotation="credit_score">
                   <h3>Credit Score</h3>
-                  <p>The applicant's FICO score is a measure of his or her creditworthiness.</p>
-                  <p>It's traditionally used to determine someone's likelhood to repay a debt like a mortgage or a car loan, but is commonly used in the rental industry for helping determine if an applicant is likely to pay rent on time.</p>
-                  <p>Scores range from 350-850. Anything over a 700 is considered excellent credit worthiness in most states.</p>
+                  <p>The applicant’s overall credit score, which is a measure of his/her likeliness to pay financial obligations (like rent).</p>
+                  <p>The exact algorithm used by the credit database is proprietary.</p>
+                  <p>Scores range from 350-850, with higher scores indicating better credit-worthiness.</p>
               </div>
-              <div data-annotation="tradelines">
-                  <h3>Trade Lines</h3>
-                  <p>Notes about tradelines!</p>
+              <div data-annotation="top_scoring_criteria">
+                  <h3>Top Scoring Criteria</h3>
+                  <p>These indicate the risk factors present in this person’s report, and the perceived risks are displayed in order based on their relative impact on the final score. </p>
+                  <p>For more about specific risk scores, please see <a href="http://reasoncode.org/">www.reasoncode.org</a>.</p>
               </div>
-              <div data-annotation="credit-grantor">
+              <div data-annotation="negative_tradelines">
+                  <h3>Negative Trade Accounts</h3>
+                  <p>Total number of negative accounts (derogatory) which are currently delinquent, in bankruptcy, has been repossessed or charged off.  These items have a negative impact on the applicant's credit score.
+                  </p>
+              </div>
+              <div data-annotation="collection_tradelines">
+                  <h3>Collections</h3>
+                  <p>Total number of collection accounts transferred to a third-party collection agency.</p>
+              </div>
+              <div data-annotation="delinquent_tradelines">
+                  <h3>Delinquent</h3>
+                  <p>Delinquent debt are amounts past due that have yet to be transferred to a collections agency.</p>
+              </div>
+              <div data-annotation="public_record_tradelines">
+                  <h3>Public Record</h3>
+                  <p>Public record information is maintained on a applicant’s file in compliance with the Fair Credit Reporting Act (FCRA).</p>
+                  <p>This information is obtained from county, state and federal courts, and includes civil judgments, state tax liens, federal tax liens, and bankruptcies. The length of time each record is held on TransUnion’s database varies by the type of record.</p>
+              </div>
+              <div data-annotation="financial_summary_high_credit">
+                  <h3>High Credit</h3>
+                  <p>The highest amount ever owed by the applicant on that account.</p>
+              </div>
+              <div data-annotation="financial_summary_open_amount">
+                  <h3>Open Amount</h3>
+                  <p>The initial balance of a loan, typically an installment loan (such as a car loan)</p>
+              </div>
+              <div data-annotation="financial_summary_credit_limit">
+                  <h3>Credit Limit</h3>
+                  <p>Maximum amount of credit approved by credit grantor.</p>
+              </div>
+              <div data-annotation="financial_summary_balance">
+                  <h3>Balance</h3>
+                  <p>The amount remaining on an installment loan.</p>
+              </div>
+              <div data-annotation="financial_summary_revolving">
+                  <h3>Revolving</h3>
+                  <p>Typically a loan such as a credit card or line of credit, which has a different amount due to the lender at the end of each month. </p>
+              </div>
+              <div data-annotation="financial_summary_installment">
+                  <h3>Installment</h3>
+                  <p>A loan that is repaid over time with a set number of scheduled payments.</p>
+              </div>
+              <div data-annotation="financial_summary_mortgage">
+                  <h3>Mortgage</h3>
+                  <p>A loan specifically for a home mortgage</p>
+              </div>
+              <div data-annotation="account_credit_grantor">
                   <h3>Credit Grantor</h3>
-                  <p>The credit grantor is the actual creditor for a given account.  This is a person, company, or organization where the applicant has a debt or an open account.</p>
-                  <p>It could be a credit card company, bank, mortgage, etc.</p>
+                  <p>The name of the company or loan granting institution.</p>
               </div>
-              <div data-annotation="current-status">
+              <div data-annotation="account_open_date">
+                  <h3>Open Date</h3>
+                  <p>The date the account was opened.</p>
+              </div>
+              <div data-annotation="account_date_rep">
+                  <h3>Date Reported</h3>
+                  <p>The most recent date the account status was reported. The older the date is, the less is known about the applicant’s current status with this item.</p>
+              </div>
+              <div data-annotation="account_current_status">
                   <h3>Current Status</h3>
-                  <p>This is the status of the account, i.e. whether it's in good standing and current on all payments, behind on payments, has been written off, etc.</p>
-                  <p>If you see "Current", that's good. If you see "Chargeoff", that's bad.</p>
+                  <p>Current Status of the loan: This is the most up-to-date information about the credit item, and where you want to look first when scanning the credit report.</p>
+                  <p>The various status names are as follows:</p>
+                  <ul>
+                    <li>CURR ACCT (current account - not past due or delinquent)</li>
+                    <li>UNRATED (not enough credit information to rate, or collection accounts often show 'UNRATED' status</li>
+                    <li>DELINQ 30 DAYS (or some other number of days)</li>
+                    <li>NOT AS AGREED (delinquent or not paying)</li>
+                    <li>CHARGE OFF (lender has charged off account, meaning they believe this debt is unlikely to be collected. Installment loans are generally charged-off after 120 days of delinquency, and revolving credit loans are charged off after 180 days. This status has the most harmful impact on an applicant’s credit score)</li>
+                    <li>COLL ACCT (collection account)</li>
+                    <li>FORECLOSURE</li>
+                    <li>IN BANKRUPTCY</li>
+                    <li>NO STATUS (no status reported by the credit repository)</li>
+                    <li>REPOSESSION (in the case of delinquency, the lender or bank may be able to repossess the item on loan, such as a car) </li>
+                  </ul>
               </div>
-              <div data-annotation="mop">
-                  <h3>MOP</h3>
-                  <p>Easter Egg!</p>
-                  <p>I think I'm supposed to remove this!</p>
+              <div data-annotation="account_months_rev">
+                  <h3>Months Reviewed</h3>
+                  <p>The number of months for which we have information about this credit item. Please note that the account may be older, but we only have information for the number of months listed (see Open Date).</p>
               </div>
+              <div data-annotation="account_credit_history">
+                  <h3>Credit History</h3>
+                  <p>The history of this particular account over the last 30, 60 and 90 days. The number of late payments will be listed in the corresponding columns (i.e., 2 late payments within 30 days, 5 late payments within 60 days, etc).</p>
+              </div>
+              <div data-annotation="account_type">
+                  <h3>Account Type</h3>
+                  <p>Specific type of account, represented by an abbreviated code. Examples:</p>
+                  <ul>
+                    <li>CRC or C/C - Credit Card</li>
+                    <li>CKG - Check Credit Or Line Of Credit</li>
+                    <li>EDU - Student Loan</li>
+                    <li>AUT - Auto loan</li>
+                    <li>LEA - Lease</li>
+                    <li>CHG - Revolving charge account</li>
+                    <li>H/E - Home Equity</li>
+                    <li>H/I - Home Improvement</li>
+                    <li>MED - Medical</li>
+                    <li>UNK - Unknown</li>
+                    <li>360 - Mortgage</li>
+                    <li>ISC - Installment Sales Contract</li>
+                    <li>M/H or R/V - Recreational Vehicle</li>
+                    <li>R/E - Real Estate</li>
+                    <li>SCC - Secured Credit Card</li>
+                    <li>SEC or CLS - Secured</li>
+                    <li>PHG - Personal Loan</li>
+                    <li>COL - Collection </li>
+                  </ul>
+              </div>
+              <div data-annotation="account_payment_pattern">
+                  <h3>Payment Pattern</h3>
+                  <p>The "Payment Pattern" indicates the applicant's behavior as it relates to that account.  Each letter indicates one month in that accounts' history.  "C" means a complete, timely payment, "L" means a late payment, and "X" means there is no data for that month.</p>
+              </div>
+              <div data-annotation="">
+                  <h3></h3>
+                  <p></p>
+              </div>
+              <div data-annotation="">
+                  <h3></h3>
+                  <p></p>
+              </div>
+              <div data-annotation="">
+                  <h3></h3>
+                  <p></p>
+              </div>
+              <div data-annotation="">
+                  <h3></h3>
+                  <p></p>
+              </div>
+              <div data-annotation="">
+                  <h3></h3>
+                  <p></p>
+              </div>
+              <div data-annotation="">
+                  <h3></h3>
+                  <p></p>
+              </div>
+
             </section>
           </div>
         </div><!--/.sidebar-offcanvas-->
