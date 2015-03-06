@@ -1,23 +1,37 @@
-$(document).ready(function () {
-  $('[data-content]').mouseenter(function() {
-      $('[data-annotation]').hide();
-      key = $(this).attr("data-content");
-      target = $('[data-annotation=' + key + ']');
-      target.show();
-  });
-  $('[data-content]').mouseleave(function() {
-      $('[data-annotation]').fadeOut();
-  });
+var hideAnnotation = function(el) {
+    // console.log("hide! not data content!", el.attr("data-content"));
+    $('[data-annotation]').fadeOut();
+};
 
-  $('.hide-offcanvas').bind("touchend", function() {
-      $('[data-annotation]').fadeOut();
-      $('.row-offcanvas').removeClass('active');
-  });
-  $('[data-content]').bind("touchend", function() {
-      $('[data-annotation]').hide();
-      key = $(this).attr("data-content");
-      target = $('[data-annotation=' + key + ']');
-      target.show();
-      $('.row-offcanvas').addClass('active');
-  });
+var showAnnotation = function(el) {
+    // console.log("DATA CONTENT", el.attr("data-content"));
+    $('[data-annotation]').hide();
+    var key = el.attr("data-content");
+    var target = $('[data-annotation=' + key + ']');
+    target.fadeIn();
+};
+
+$(document).ready(function () {
+    $('[data-content]').mouseenter(function() {
+        var el = $(this);
+        showAnnotation(el);
+    });
+    $('[data-content]').mouseleave(function() {
+        var el = $(this);
+        hideAnnotation(el);
+    });
+
+    $('*').bind("click ", function(event) {
+        var el = $(this);
+        if (el.attr("data-content") != undefined) {
+            showAnnotation(el);
+            $('.row-offcanvas').addClass('active');
+            event.stopPropagation();
+        } else {
+            hideAnnotation(el);
+            $('.row-offcanvas').removeClass('active');
+        }
+    });
 });
+
+
