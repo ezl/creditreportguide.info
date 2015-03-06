@@ -1270,35 +1270,43 @@
               </div>
               <div data-annotation="account_credit_history">
                   <h3>Credit History</h3>
-                  <p>The history of this particular account over the last 30, 60 and 90 days. The number of late payments will be listed in the corresponding columns (i.e., 2 late payments within 30 days, 5 late payments within 60 days, etc).</p>
+                  <p>The number of times a payment has been 30, 60, or 90 days late over the lifetime of the account. The number of late payments will be listed in the corresponding columns (i.e., "has been 30 days 4 times before", "has been 60 days late 1 time before", etc).</p>
               </div>
               <div data-annotation="account_type">
                   <h3>Account Type</h3>
                   <p>Specific type of account, represented by an abbreviated code. Examples:</p>
                   <ul>
-                    <li>CRC or C/C - Credit Card</li>
-                    <li>CKG - Check Credit Or Line Of Credit</li>
-                    <li>EDU - Student Loan</li>
-                    <li>AUT - Auto loan</li>
-                    <li>LEA - Lease</li>
-                    <li>CHG - Revolving charge account</li>
-                    <li>H/E - Home Equity</li>
-                    <li>H/I - Home Improvement</li>
-                    <li>MED - Medical</li>
-                    <li>UNK - Unknown</li>
-                    <li>360 - Mortgage</li>
-                    <li>ISC - Installment Sales Contract</li>
-                    <li>M/H or R/V - Recreational Vehicle</li>
-                    <li>R/E - Real Estate</li>
-                    <li>SCC - Secured Credit Card</li>
-                    <li>SEC or CLS - Secured</li>
-                    <li>PHG - Personal Loan</li>
-                    <li>COL - Collection </li>
+                    <li><strong>CRC or C/C</strong> - Credit Card</li>
+                    <li><strong>CKG</strong> - Check Credit Or Line Of Credit</li>
+                    <li><strong>EDU</strong> - Student Loan</li>
+                    <li><strong>AUT</strong> - Auto loan</li>
+                    <li><strong>LEA</strong> - Lease</li>
+                    <li><strong>CHG</strong> - Revolving charge account</li>
+                    <li><strong>H/E</strong> - Home Equity</li>
+                    <li><strong>H/I</strong> - Home Improvement</li>
+                    <li><strong>MED</strong> - Medical</li>
+                    <li><strong>UNK</strong> - Unknown</li>
+                    <li><strong>360</strong> - Mortgage (refers to the traditional 30 year, or 360 month mortgage term)</li>
+                    <li><strong>ISC</strong> - Installment Sales Contract</li>
+                    <li><strong>M/H or R/V</strong> - Recreational Vehicle</li>
+                    <li><strong>R/E</strong> - Real Estate</li>
+                    <li><strong>SCC</strong> - Secured Credit Card</li>
+                    <li><strong>SEC or CLS</strong> - Secured</li>
+                    <li><strong>PHG</strong> - Personal Loan</li>
+                    <li><strong>COL</strong> - Collection </li>
                   </ul>
               </div>
               <div data-annotation="account_payment_pattern">
                   <h3>Payment Pattern</h3>
-                  <p>The "Payment Pattern" indicates the applicant's behavior as it relates to that account.  Each letter indicates one month in that accounts' history.  "C" means a complete, timely payment, "L" means a late payment, and "X" means there is no data for that month.</p>
+                  <p>The "Payment Pattern" indicates the applicant's behavior as it relates to that account.  Each letter indicates one month in that accounts' history up to 24 trailing months.</p>
+                  <ul>
+                    <li>"<strong>C</strong>" means the account was current and fully paid.</li>
+                    <li>"<strong>X</strong>" means there is no data for that month.  This could because the account didn't exist or wasn't active yet (check the open date).</li>
+                    <li>"<strong>1</strong>" means that the account was 1 month behind on payments.</li>
+                    <li>"<strong>2</strong>" means that the account was 2 months behind on payments.</li>
+                    <li>"<strong>3</strong>" means that the account was 3 months behind on payments.</li>
+                    <li>etc...</li>
+                  </ul>
               </div>
               <div data-annotation="">
                   <h3></h3>
