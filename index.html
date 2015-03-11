@@ -1118,6 +1118,7 @@
                 <p>Credit reports can be complicated and difficult to understand.</p>
                 <p>This is an <strong>interactive guide</strong> to help you understand how to effectively read credit reports.</p>
                 <p>If you hover your mouse over any content that is highlighted in <span class="sample-highlight">beige</span> on the sample credit report to your left, you'll see an explanation of what that data means right here.</p><br>
+                <button class="btn btn-primary btn-block close-instructions">OK, got it</button>
             </div><!-- #welcome -->
             <section id="annotations">
               <div data-annotation="file_number">
@@ -1322,5 +1323,12 @@
 
     <script src="js/offcanvas.js"></script>
     <script src="js/annotations.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".close-instructions").on("click", function() {
+          $("#welcome").fadeOut();
+        });
+      });
+    </script>
   </body>
 </html>
