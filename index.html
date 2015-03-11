@@ -711,7 +711,7 @@
                   <tr>
                     <th class="title" colspan="4">Address Information</th>
                   </tr>
-                  <tr>
+                  <tr data-content="address_information">
                     <th>Address</th>
                     <th>City State</th>
                     <th>Postal Code</th>
@@ -754,7 +754,7 @@
                     <th class="title" colspan="2">Employment</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody data-content="employment_information">
                   <tr>
                     <td>Spacely Space Sprockets</td>
                     <td>Current</td>
@@ -1232,6 +1232,8 @@
               </div>
               <div data-annotation="account_type">
                   <h3>Account Type</h3>
+                  <p>Specific type of account, such as automobile, credit card or mortgage</p>
+                  <!--
                   <p>Specific type of account, represented by an abbreviated code. Examples:</p>
                   <ul>
                     <li><strong>CRC or C/C</strong> - Credit Card</li>
@@ -1253,6 +1255,7 @@
                     <li><strong>PHG</strong> - Personal Loan</li>
                     <li><strong>COL</strong> - Collection </li>
                   </ul>
+                  -->
               </div>
               <div data-annotation="account_payment_pattern">
                   <h3>Payment Pattern</h3>
@@ -1281,13 +1284,14 @@
                     <li>alternate spellings</li>
                   </ul>
               </div>
-              <div data-annotation="">
-                  <h3></h3>
-                  <p></p>
+              <div data-annotation="address_information">
+                  <h3>Address Information</h3>
+                  <p>Current and previous addresses for the applicant, as are available in the Credit Reporting Database.</p>
+                  <p>May not show all addresses where the applicant has lived if other residences were not connected with credit data.</p>
               </div>
-              <div data-annotation="">
-                  <h3></h3>
-                  <p></p>
+              <div data-annotation="employment_information">
+                  <h3>Employment Information</h3>
+                  <p>All employment data available on the applicant.</p>
               </div>
               <div data-annotation="">
                   <h3></h3>
