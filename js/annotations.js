@@ -1,10 +1,12 @@
 var hideAnnotation = function(el) {
     // console.log("hide! not data content!", el.attr("data-content"));
     $('[data-annotation]').fadeOut();
+    $("#instructions").show();
 };
 
 var showAnnotation = function(el) {
     // console.log("DATA CONTENT", el.attr("data-content"));
+    $("#instructions").hide();
     $('[data-annotation]').hide();
     var key = el.attr("data-content");
     var target = $('[data-annotation=' + key + ']');

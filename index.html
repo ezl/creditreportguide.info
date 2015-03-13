@@ -1113,12 +1113,12 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" >
           <div data-spy="affix" data-offset-top="60" style="padding-right:20px;">
             <div class="alert alert-dismissable alert-info fade in" id="welcome">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h3>Welcome!</h3>
                 <p>Credit reports can be complicated and difficult to understand.</p>
                 <p>This is an <strong>interactive guide</strong> to help you understand how to effectively read credit reports.</p>
-                <p>If you hover your mouse over any content that is highlighted in <span class="sample-highlight">beige</span> on the sample credit report to your left, you'll see an explanation of what that data means right here.</p><br>
-                <button class="btn btn-primary btn-block close-instructions">OK, got it</button>
+                <p>Hover your mouse over any <span class="sample-highlight">beige</span> content on the sample report to your left to see an explanation of what that field means right here.</p>
+                <br>
+                <p><button class="btn btn-primary btn-block close-instructions">OK, I Got It!</button></p>
             </div><!-- #welcome -->
             <section id="annotations">
               <div data-annotation="file_number">
@@ -1302,7 +1302,10 @@
                   <p></p>
               </div>
 
-            </section>
+            </section><!-- #annotations -->
+            <div id="instructions" class="quiet hide" style="display:none;">
+              <p>Hover your mouse over any <span class="sample-highlight">beige</span> content on the sample report to your left to see an explanation of what that field means right here.</p>
+            </div>
           </div>
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
@@ -1331,6 +1334,10 @@
       $(document).ready(function () {
         $(".close-instructions").on("click", function() {
           $("#welcome").fadeOut();
+          window.setTimeout(function() {
+            $("#instructions").removeClass("hide");
+            $("#instructions").fadeIn();
+          }, 1000);
         });
       });
     </script>
